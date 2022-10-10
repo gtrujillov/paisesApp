@@ -1,0 +1,17 @@
+<div class="text-layout">
+  <h1>Nombre : {{ nombre | titlecase }}</h1>
+  <h1>Valor : {{valor | number}}$</h1>
+</div>
+
+<button 
+  pButton 
+  icon=" pi pi-bell" 
+  (click)="mostrarNombre()" 
+  label="Cambiar Nombre"
+  iconPos="right"
+  class="p-button-help"
+></button>
+
+<p-card [header]="nombre | titlecase">
+  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque enim excepturi nostrum id repellat saepe officia illum doloremque? Ipsum debitis odio odit aut excepturi aliquam amet molestiae cupiditate est distinctio.
+</p-card>
